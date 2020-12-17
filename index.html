@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+			rel="stylesheet"
+		/>
+        <link rel="stylesheet" href="./style.css" />
+        <title> Tech Store </title>    
+    </head>
+
+    <body>
+        
+        <!-- Javascript start-->
+        <script>
+            function changeIMG() {
+                var Image_Id = document.getElementById('getImage');
+                if (Image_Id.src.match("./img/gaming1.jpg"))
+                {
+                    Image_Id.src = "./img/matebook.png";
+
+                }
+                else if (Image_Id.src.match("./img/matebook.png")) {
+                    Image_Id.src = "./img/gaming2.png";
+                }
+                else {
+                    Image_Id.src = "./img/gaming1.jpg";
+                }
+            }     
+        </script>
+        <!-- Javascript end-->
+
+        <header>
+            <div class="logo-container">
+                <img src="./img/logo.svg" alt="logo">
+                <h4 class="logo"> Tech Store </h4>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a class="nav-link" href="#" > Home </a></li>
+                    <li><a class="nav-link" href="#"> Products </a></li>
+                    <li><a class="nav-link" href="#"> Contact </a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+                <img src="./img/cart.svg" alt="cart">
+            </div>
+        </header>
+
+        <!-- MAIN content start-->
+        <main>
+            <section class="presentation">
+                <div class="introduction">
+                    <div class="intro-text">
+                        <h1> Gaming PCs and Laptops</h1>
+                        <p> Some of our newest products</p>
+                    </div>
+                    <div class="cta">
+                        <button class="cta-select">
+                            Specifications
+                        </button>
+                        <button class="cta-add">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cover">
+                    <img src="./img/gaming1.jpg" alt="gaming1" id="getImage" onclick="changeIMG();">
+                </div>
+
+            </section>
+
+            <div class="pc-select">
+                <img src="./img/arrow-left.svg" alt="">
+                <img src="./img/dot.svg" alt="">
+                <img src="./img/dot-full.svg" id="getImage" alt="">
+                <img src="./img/dot-full.svg" alt="">
+                <img src="./img/arrow-right.svg" alt="">
+            </div>
+
+            <img class="big-circle" src="./img/big-eclipse.svg" alt="">
+            <img class="medium-circle" src="./img/mid-eclipse.svg" alt="">
+            <img class="small-circle" src="./img/small-eclipse.svg" alt="">
+
+        </main>
+        <!-- MAIN content end-->
+
+    </body>
+</html>
